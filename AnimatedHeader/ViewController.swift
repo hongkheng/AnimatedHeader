@@ -24,6 +24,11 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSou
         //self.navigationController?.navigationBar.backgroundColor = UIColor(red: 0/255.0, green: 176/255.0, blue: 178/255.0, alpha: 1.0)
         //UIApplication.shared.statusBarStyle = .lightContent
         //UIApplication.shared.statusBarView?.backgroundColor = UIColor(red: 0/255.0, green: 176/255.0, blue: 178/255.0, alpha: 1.0)
+        
+        self.navigationController?.navigationBar.shadowImage = UIColor(red: 0.071/255.0, green: 0.706, blue: 0.722, alpha: 1.0).as1ptImage()
+        self.navigationController?.navigationBar.setBackgroundImage(UIColor(red: 0.071/255.0, green: 0.706, blue: 0.722, alpha: 1.0).as1ptImage(), for: .default)
+        
+        //self.buttonBar.backgroundColor = UIColor(red: 1/255.0, green: 176/255.0, blue: 181/255.0, alpha: 1.0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,3 +72,14 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSou
 
 }
 
+extension UIColor {
+    func as1ptImage() -> UIImage {
+        UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
+        let ctx = UIGraphicsGetCurrentContext()
+        self.setFill()
+        ctx!.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
+}
