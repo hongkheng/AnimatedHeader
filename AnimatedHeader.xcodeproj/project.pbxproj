@@ -12,6 +12,7 @@
 		6336F7AE1E67E71C00D61DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6336F7AC1E67E71C00D61DD5 /* Main.storyboard */; };
 		6336F7B01E67E71C00D61DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6336F7AF1E67E71C00D61DD5 /* Assets.xcassets */; };
 		6336F7B31E67E71C00D61DD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6336F7B11E67E71C00D61DD5 /* LaunchScreen.storyboard */; };
+		6370BDDB1E691CC1008D1E89 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6370BDDA1E691CC1008D1E89 /* MainNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6336F7AF1E67E71C00D61DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6336F7B21E67E71C00D61DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6336F7B41E67E71C00D61DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6370BDDA1E691CC1008D1E89 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				6336F7A81E67E71C00D61DD5 /* AppDelegate.swift */,
 				6336F7AA1E67E71C00D61DD5 /* ViewController.swift */,
 				6336F7AC1E67E71C00D61DD5 /* Main.storyboard */,
+				6370BDDA1E691CC1008D1E89 /* MainNavigationViewController.swift */,
 				6336F7AF1E67E71C00D61DD5 /* Assets.xcassets */,
 				6336F7B11E67E71C00D61DD5 /* LaunchScreen.storyboard */,
 				6336F7B41E67E71C00D61DD5 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6336F7AB1E67E71C00D61DD5 /* ViewController.swift in Sources */,
+				6370BDDB1E691CC1008D1E89 /* MainNavigationViewController.swift in Sources */,
 				6336F7A91E67E71C00D61DD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +304,7 @@
 				6336F7B91E67E71C00D61DD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
